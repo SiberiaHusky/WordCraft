@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label for="rule">Enter Rule (e.g. CV(V/!)):</label>
+            <input type="text" id="rule" placeholder="Enter rule">
+        </div>
+
+        <div>
+            <label for="customParts">Enter Custom Parts (e.g. C=b,p,m,f; V=a,o,e,i,u; N=n,ng; X=x,y,z):</label>
+            <input type="text" id="customParts" placeholder="Enter custom parts">
+        </div>
+
+        <div>
+            <label for="count">Number of Words to Generate:</label>
+            <input type="number" id="count" min="1" value="10">
+        </div>
+
+        <button onclick="generateWords()" title="Click to generate words.">Generate Pinyins</button>
+    </div>
+
+    <div class="container">
+        <label>Outputs:</label>
+        <div id="output">aaaaaaaa</div>
+    </div>
+
+    <div class="container" style="font-size: smaller;">
+        <b>Words Generator</b>
+        <p>A web-based conlang words generator.</p>
+        <hr />
+        <p>Copyright &copy; 2024 SiberiaHusky. All rights reserved.</p>
+        <p>Help by <a href="https://chat.openai.com/" target="_blank" title="Click to open ChatGPT in a new tab.">ChatGPT 4o</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
