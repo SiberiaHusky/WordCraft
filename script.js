@@ -3,7 +3,7 @@ function getRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// 解析并生成拼音的函数
+// 解析并生成单词的函数
 function generateWord(rule, pron) {
     let pinyin = "";
     let index = 0;
@@ -45,7 +45,7 @@ function generateWord(rule, pron) {
     return pinyin;
 }
 
-// 生成并显示拼音的函数
+// 生成并显示单词的函数
 function generateWords() {
     const rule = document.getElementById("rule").value;
     const customPartsInput = document.getElementById("customParts").value;
